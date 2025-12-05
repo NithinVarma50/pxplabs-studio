@@ -25,6 +25,23 @@ const About = () => {
         </div>
       </section>
 
+      {/* Philosophy Section */}
+      <section className="section-padding border-t border-border/40">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="max-w-3xl"
+          >
+            <h2 className="font-heading text-2xl md:text-3xl font-medium leading-relaxed">
+              "We believe that great digital experiences shouldn't be complicated. They should be intuitive, efficient, and beautiful. We strip away the unnecessary to focus on what matters most: your message and your goals."
+            </h2>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Team Section */}
       <section className="section-padding border-t border-border/40">
         <div className="container mx-auto">
@@ -81,6 +98,58 @@ const About = () => {
               </p>
 
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="section-padding border-t border-border/40">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <span className="text-xs text-muted-foreground uppercase tracking-wider">Process</span>
+            <h2 className="font-heading text-3xl font-semibold mt-4">
+              How we work
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                step: "01",
+                title: "Listen & Plan",
+                desc: "We start by understanding your vision and requirements. No jargon, just clear goals."
+              },
+              {
+                step: "02",
+                title: "Build & Refine",
+                desc: "We create with precision, keeping you in the loop. Iterative feedback ensures we hit the mark."
+              },
+              {
+                step: "03",
+                title: "Launch & Scale",
+                desc: "We deliver a polished product ready for the world, and help you understand how to use it."
+              }
+            ].map((item, index) => (
+              <motion.div
+                key={item.step}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="relative"
+              >
+                <span className="text-6xl font-heading font-bold text-muted/20 absolute -top-8 -left-4 -z-10">
+                  {item.step}
+                </span>
+                <h3 className="font-heading text-xl font-medium mb-3">{item.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
