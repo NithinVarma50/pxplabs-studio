@@ -65,24 +65,7 @@ const Footer = () => {
                   WhatsApp
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://instagram.com/pixelprophett"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:hello@pixelprophett.com"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Email
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>

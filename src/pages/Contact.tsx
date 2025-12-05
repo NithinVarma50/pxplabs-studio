@@ -52,7 +52,7 @@ const Contact = () => {
     const servicesText = formData.services
       .map((s) => serviceOptions.find((opt) => opt.id === s)?.label)
       .join(", ");
-    
+
     const budgetText = budgetOptions.find((b) => b.value === formData.budget)?.label || formData.budget;
 
     const message = `New Project Inquiry
@@ -129,11 +129,10 @@ Details: ${formData.details || "Not provided"}`;
                   {serviceOptions.map((service) => (
                     <label
                       key={service.id}
-                      className={`flex items-center gap-3 p-3 rounded-xl border cursor-pointer transition-all ${
-                        formData.services.includes(service.id)
+                      className={`flex items-center gap-3 p-3 rounded-xl border cursor-pointer transition-all ${formData.services.includes(service.id)
                           ? "border-foreground bg-foreground/5"
                           : "border-border/50 hover:border-border"
-                      }`}
+                        }`}
                     >
                       <Checkbox
                         checked={formData.services.includes(service.id)}
@@ -152,11 +151,10 @@ Details: ${formData.details || "Not provided"}`;
                   {budgetOptions.map((option) => (
                     <label
                       key={option.value}
-                      className={`px-4 py-2.5 rounded-full border cursor-pointer transition-all text-sm ${
-                        formData.budget === option.value
+                      className={`px-4 py-2.5 rounded-full border cursor-pointer transition-all text-sm ${formData.budget === option.value
                           ? "border-foreground bg-foreground text-background"
                           : "border-border/50 hover:border-border"
-                      }`}
+                        }`}
                     >
                       <input
                         type="radio"
@@ -216,22 +214,7 @@ Details: ${formData.details || "Not provided"}`;
                     <p className="text-sm text-muted-foreground mb-1">WhatsApp</p>
                     <p className="font-medium">Message us</p>
                   </a>
-                  <a
-                    href="https://instagram.com/pixelprophett"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block p-4 rounded-xl border border-border/40 hover:border-border transition-colors"
-                  >
-                    <p className="text-sm text-muted-foreground mb-1">Instagram</p>
-                    <p className="font-medium">@pixelprophett</p>
-                  </a>
-                  <a
-                    href="mailto:hello@pixelprophett.com"
-                    className="block p-4 rounded-xl border border-border/40 hover:border-border transition-colors"
-                  >
-                    <p className="text-sm text-muted-foreground mb-1">Email</p>
-                    <p className="font-medium">hello@pixelprophett.com</p>
-                  </a>
+
                 </div>
               </div>
 
