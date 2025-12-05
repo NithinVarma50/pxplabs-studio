@@ -29,11 +29,11 @@ const Hero = () => {
 
             {/* Headline */}
             {/* Headline */}
-            <div className="mb-6 -ml-4">
+            <div className="mb-6 lg:-ml-4">
               <ScrollingHeroMarquee
                 text="We build websites, automations, and content that actually work."
-                fontSize="clamp(2rem, 4vw, 3.75rem)"
-                rowHeight={80}
+                fontSize="clamp(1.5rem, 4vw, 3.75rem)"
+                rowHeight={100}
                 durationSec={20}
                 bottomRotateXDeg={-10}
                 bottomSkewXDeg={10}
@@ -90,7 +90,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="relative mt-12 lg:mt-0 w-full flex justify-center lg:block scale-50 sm:scale-75 lg:scale-100 origin-top lg:origin-left"
+            className="relative mt-12 lg:mt-0 w-full flex justify-center lg:block scale-50 sm:scale-75 lg:scale-100 origin-center lg:origin-left"
           >
             <StackedImageHover
               images={[
