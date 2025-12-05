@@ -59,13 +59,7 @@ const About = () => {
                 Builds websites and workflow systems that save hours of manual work.
                 Specializes in clean, modern interfaces and automation setups.
               </p>
-              <div className="flex flex-wrap gap-2">
-                {["React", "n8n", "Make.com", "APIs"].map((skill) => (
-                  <span key={skill} className="px-3 py-1 text-xs rounded-full bg-muted text-muted-foreground">
-                    {skill}
-                  </span>
-                ))}
-              </div>
+
             </motion.div>
 
             {/* Koushik */}
@@ -85,13 +79,7 @@ const About = () => {
                 Creates modern and aesthetic content that enhances your brand presence.
                 From reels to posters, delivers premium quality.
               </p>
-              <div className="flex flex-wrap gap-2">
-                {["Premiere Pro", "After Effects", "Photoshop", "Figma"].map((skill) => (
-                  <span key={skill} className="px-3 py-1 text-xs rounded-full bg-muted text-muted-foreground">
-                    {skill}
-                  </span>
-                ))}
-              </div>
+
             </motion.div>
           </div>
         </div>
