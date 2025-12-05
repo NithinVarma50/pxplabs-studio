@@ -1,6 +1,6 @@
 import Layout from "@/components/layout/Layout";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -9,18 +9,12 @@ import { MessageCircle } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const serviceOptions = [
-  { id: "portfolio", label: "Portfolio" },
-  { id: "website", label: "Website" },
-  { id: "automation", label: "Automation" },
-  { id: "scraping", label: "Data Scraping" },
-  { id: "video", label: "Video Editing" },
-  { id: "design", label: "Design" },
-];
-
-const budgetOptions = [
-  { value: "4000-10000", label: "₹4K – ₹10K" },
-  { value: "10000-20000", label: "₹10K – ₹20K" },
-  { value: "20000+", label: "₹20K+" },
+  { id: "design", label: "Design", basePrice: 300 },
+  { id: "video", label: "Video Editing", basePrice: 1000 },
+  { id: "scraping", label: "Data Scraping", basePrice: 2000 },
+  { id: "portfolio", label: "Portfolio", basePrice: 4000 },
+  { id: "automation", label: "Automation", basePrice: 5000 },
+  { id: "website", label: "Website", basePrice: 8000 },
 ];
 
 const Contact = () => {
@@ -32,13 +26,66 @@ const Contact = () => {
     details: "",
   });
 
+  const [dynamicBudgetOptions, setDynamicBudgetOptions] = useState<{ value: string; label: string }[]>([]);
+
+  useEffect(() => {
+    const selectedServices = serviceOptions.filter(s => formData.services.includes(s.id));
+    const baseTotal = selectedServices.reduce((sum, service) => sum + service.basePrice, 0);
+
+    if (baseTotal === 0) {
+      // Default options if nothing selected (showing generic low range starting from lowest service)
+      setDynamicBudgetOptions([
+        { value: "300-1000", label: "₹300 – ₹1K" },
+        { value: "1000-5000", label: "₹1K – ₹5K" },
+        { value: "5000+", label: "₹5K+" },
+      ]);
+      return;
+    }
+
+    // Create 3 tiers based on baseTotal
+    // Tier 1: Base to 2x Base
+    // Tier 2: 2x Base to 5x Base
+    // Tier 3: 5x Base +
+
+    const tier1End = baseTotal * 2;
+    const tier2End = baseTotal * 5;
+
+    const formatCurrency = (amount: number) => {
+      if (amount >= 1000) {
+        return `₹${(amount / 1000).toFixed(amount % 1000 === 0 ? 0 : 1)}K`;
+      }
+      return `₹${amount}`;
+    };
+
+    setDynamicBudgetOptions([
+      {
+        value: `${baseTotal}-${tier1End}`,
+        label: `${formatCurrency(baseTotal)} – ${formatCurrency(tier1End)}`
+      },
+      {
+        value: `${tier1End}-${tier2End}`,
+        label: `${formatCurrency(tier1End)} – ${formatCurrency(tier2End)}`
+      },
+      {
+        value: `${tier2End}+`,
+        label: `${formatCurrency(tier2End)}+`
+      },
+    ]);
+  }, [formData.services]);
+
   const handleServiceToggle = (serviceId: string) => {
-    setFormData((prev) => ({
-      ...prev,
-      services: prev.services.includes(serviceId)
+    setFormData((prev) => {
+      const newServices = prev.services.includes(serviceId)
         ? prev.services.filter((s) => s !== serviceId)
-        : [...prev.services, serviceId],
-    }));
+        : [...prev.services, serviceId];
+
+      // Reset budget when services change as options will change
+      return {
+        ...prev,
+        services: newServices,
+        budget: ""
+      };
+    });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -53,7 +100,7 @@ const Contact = () => {
       .map((s) => serviceOptions.find((opt) => opt.id === s)?.label)
       .join(", ");
 
-    const budgetText = budgetOptions.find((b) => b.value === formData.budget)?.label || formData.budget;
+    const budgetText = dynamicBudgetOptions.find((b) => b.value === formData.budget)?.label || formData.budget;
 
     const message = `New Project Inquiry
 Name: ${formData.name}
@@ -130,8 +177,8 @@ Details: ${formData.details || "Not provided"}`;
                     <label
                       key={service.id}
                       className={`flex items-center gap-3 p-3 rounded-xl border cursor-pointer transition-all ${formData.services.includes(service.id)
-                          ? "border-foreground bg-foreground/5"
-                          : "border-border/50 hover:border-border"
+                        ? "border-foreground bg-foreground/5"
+                        : "border-border/50 hover:border-border"
                         }`}
                     >
                       <Checkbox
@@ -148,12 +195,12 @@ Details: ${formData.details || "Not provided"}`;
               <div>
                 <label className="block text-sm font-medium mb-3">Budget range</label>
                 <div className="flex flex-wrap gap-3">
-                  {budgetOptions.map((option) => (
+                  {dynamicBudgetOptions.map((option) => (
                     <label
                       key={option.value}
                       className={`px-4 py-2.5 rounded-full border cursor-pointer transition-all text-sm ${formData.budget === option.value
-                          ? "border-foreground bg-foreground text-background"
-                          : "border-border/50 hover:border-border"
+                        ? "border-foreground bg-foreground text-background"
+                        : "border-border/50 hover:border-border"
                         }`}
                     >
                       <input
