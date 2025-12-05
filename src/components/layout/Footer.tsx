@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-4">
               <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center">
-                <img src="/pxplabs-logo.jpg" alt="PXPLabs Logo" className="w-full h-full object-cover" />
+                <img src="/pxplabs-logo-black.png" alt="PXPLabs Logo" className="w-full h-full object-cover" />
               </div>
               <span className="font-heading font-medium text-sm">PXPLabs</span>
             </Link>

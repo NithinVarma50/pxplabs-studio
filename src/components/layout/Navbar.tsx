@@ -23,7 +23,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center">
-              <img src="/pxplabs-logo.jpg" alt="PXPLabs Logo" className="w-full h-full object-cover" />
+              <img src="/pxplabs-logo-black.png" alt="PXPLabs Logo" className="w-full h-full object-cover" />
             </div>
             <span className="font-heading font-medium text-sm hidden sm:block">
               PXPLabs
