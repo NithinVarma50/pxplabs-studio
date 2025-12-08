@@ -136,7 +136,7 @@ const About = () => {
               className="p-8 rounded-2xl border border-border/40 bg-card/30"
             >
               <div className="w-16 h-16 rounded-full overflow-hidden mb-6 border border-border/50">
-                <img src="/saiteja.jpg" alt="Saiteja" className="w-full h-full object-cover" />
+                <img src="/saiteja.jpg" alt="Saiteja" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-heading text-xl font-medium mb-2">Saiteja</h3>
               <p className="text-sm text-muted-foreground mb-6">Short Form Editor & Cinematographer</p>
