@@ -110,7 +110,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg text-muted-foreground max-w-xl mb-10 leading-relaxed"
             >
-              A two-person studio by Nithin & Koushik — delivering clean interfaces,
+              PXPLabs Studio — A freelance agency delivering clean interfaces,
               time-saving workflows, and modern content for creators, startups, and agencies.
             </motion.p>
 

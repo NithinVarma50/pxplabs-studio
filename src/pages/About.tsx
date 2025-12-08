@@ -59,7 +59,7 @@ const About = () => {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-8">
             {/* Nithin */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -125,7 +125,24 @@ const About = () => {
                   <Linkedin className="w-5 h-5" />
                 </a>
               </div>
+            </motion.div>
 
+            {/* Saiteja */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="p-8 rounded-2xl border border-border/40 bg-card/30"
+            >
+              <div className="w-16 h-16 rounded-full overflow-hidden mb-6 border border-border/50">
+                <img src="/saiteja.jpg" alt="Saiteja" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-heading text-xl font-medium mb-2">Saiteja</h3>
+              <p className="text-sm text-muted-foreground mb-6">Short Form Editor & Cinematographer</p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Specializes in engaging short-form content and mobile editing. Explores cinematography to bring visual depth to every frame.
+              </p>
             </motion.div>
           </div>
         </div>
@@ -218,7 +235,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </Layout >
   );
 };
 

@@ -77,7 +77,7 @@ const Footer = () => {
             © {new Date().getFullYear()} PXPLabs
           </p>
           <p className="text-xs text-muted-foreground">
-            Nithin & Koushik
+            PXPLabs Studio
           </p>
         </div>
       </div>
