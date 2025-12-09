@@ -134,14 +134,14 @@ const Services = () => {
           id="video"
           number="04"
           title="Video Editing"
-          subtitle="by Koushik"
+
           services={videoServices}
         />
         <ServiceSection
           id="design"
           number="05"
           title="Graphic Design"
-          subtitle="by Koushik"
+
           services={designServices}
         />
       </div>
