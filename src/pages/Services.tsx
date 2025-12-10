@@ -30,6 +30,15 @@ const videoServices = [
   { service: "Podcast / Interview", price: "₹4,500+" },
   { service: "Promo Video", price: "₹3,000 – ₹6,000" },
   { service: "Portfolio Intro", price: "₹3,500+" },
+  { service: "Montage", price: "₹1,500+" },
+  { service: "Content Creation", price: "₹2,000+" },
+];
+
+const commercialServices = [
+  { service: "Advertisements (Shoot + Edit)", price: "₹15,000+" },
+  { service: "Trailer Cuts", price: "₹4,000+" },
+  { service: "Documentary", price: "₹2,000+" },
+  { service: "Advanced After Effects", price: "₹3,000+" },
 ];
 
 const designServices = [
@@ -138,8 +147,14 @@ const Services = () => {
           services={videoServices}
         />
         <ServiceSection
-          id="design"
+          id="commercial"
           number="05"
+          title="Commercial & Documentary"
+          services={commercialServices}
+        />
+        <ServiceSection
+          id="design"
+          number="06"
           title="Graphic Design"
 
           services={designServices}

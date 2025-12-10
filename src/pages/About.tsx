@@ -139,10 +139,46 @@ const About = () => {
                 <img src="/saiteja.jpg" alt="Saiteja" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-heading text-xl font-medium mb-2">Saiteja</h3>
-              <p className="text-sm text-muted-foreground mb-6">Short Form Editor & Cinematographer</p>
+              <p className="text-sm text-muted-foreground mb-6">Mobile Editor & Short Form Editor</p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Specializes in engaging short-form content and mobile editing. Explores cinematography to bring visual depth to every frame.
+                Specializes in engaging short-form content and "human" style editing, adding a personal touch to every frame.
               </p>
+            </motion.div>
+
+            {/* Rajdeep */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="p-8 rounded-2xl border border-border/40 bg-card/30"
+            >
+              <div className="w-16 h-16 rounded-full overflow-hidden mb-6 border border-border/50">
+                <img src="/rajdeep.jpg" alt="Rajdeep" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-heading text-xl font-medium mb-2">Rajdeep</h3>
+              <p className="text-sm text-muted-foreground mb-6">Video Editing & Marketing Video Shoots (Bangalore & Hyderabad)</p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Expert video editor with a portfolio of great projects. Handles marketing video shoots in Bangalore and Hyderabad.
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href="https://www.linkedin.com/in/rajdeep-kanchana-4401a5321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://rawkut.carrd.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Globe className="w-5 h-5" />
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>

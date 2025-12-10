@@ -9,12 +9,26 @@ import { MessageCircle } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const serviceOptions = [
-  { id: "design", label: "Design", basePrice: 300 },
-  { id: "video", label: "Video Editing", basePrice: 1000 },
-  { id: "scraping", label: "Data Scraping", basePrice: 2000 },
-  { id: "portfolio", label: "Portfolio", basePrice: 4000 },
-  { id: "automation", label: "Automation", basePrice: 5000 },
-  { id: "website", label: "Website", basePrice: 6000 },
+  // Web
+  { id: "single-page", label: "Single Page Portfolio", basePrice: 4000 },
+  { id: "frontend", label: "Frontend Website", basePrice: 6000 },
+  { id: "fullstack", label: "Fullstack App", basePrice: 12000 },
+  // Automation
+  { id: "workflow", label: "Workflow Automation", basePrice: 3000 },
+  { id: "system", label: "Full System", basePrice: 10000 },
+  // Data
+  { id: "scraping", label: "Data Scraping", basePrice: 1500 },
+  // Video & Commercial
+  { id: "reel", label: "Short Reel", basePrice: 800 },
+  { id: "long-video", label: "Long-Form Video", basePrice: 3000 },
+  { id: "montage", label: "Montage", basePrice: 1500 },
+  { id: "content", label: "Content Creation", basePrice: 2000 },
+  { id: "ad", label: "Ad (Shoot + Edit)", basePrice: 15000 },
+  { id: "trailer", label: "Trailer Cut", basePrice: 4000 },
+  { id: "doc", label: "Documentary", basePrice: 2000 },
+  // Design
+  { id: "graphic", label: "Graphic Design", basePrice: 500 },
+  { id: "logo", label: "Logo Design", basePrice: 2000 },
 ];
 
 const Contact = () => {

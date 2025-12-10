@@ -29,6 +29,12 @@ const services = [
   },
   {
     number: "05",
+    title: "Commercial & Documentary",
+    description: "Ads, trailer cuts, and documentaries with advanced visual effects.",
+    link: "/services#commercial",
+  },
+  {
+    number: "06",
     title: "Graphic Design",
     description: "Modern posters, thumbnails, logos, and brand assets.",
     link: "/services#design",
