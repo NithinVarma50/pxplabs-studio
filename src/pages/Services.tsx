@@ -47,7 +47,7 @@ const designServices = [
   { service: "Logo Design", price: "₹200 – ₹1,000" },
   { service: "Business Card", price: "₹800+" },
   { service: "YouTube Thumbnail", price: "₹300+" },
-  { service: "Brochure", price: "₹1,500+" },
+  { service: "Brochure", price: "₹300+" },
 ];
 
 interface ServiceSectionProps {
