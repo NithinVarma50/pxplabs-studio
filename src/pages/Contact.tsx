@@ -27,8 +27,9 @@ const serviceOptions = [
   { id: "trailer", label: "Trailer Cut", basePrice: 4000 },
   { id: "doc", label: "Documentary", basePrice: 2000 },
   // Design
-  { id: "graphic", label: "Graphic Design", basePrice: 500 },
-  { id: "logo", label: "Logo Design", basePrice: 2000 },
+  { id: "graphic", label: "Graphic Design", basePrice: 300 },
+  { id: "logo", label: "Logo Design", basePrice: 200 },
+  { id: "business-card", label: "Business Card Design", basePrice: 200 },
 ];
 
 const Contact = () => {
