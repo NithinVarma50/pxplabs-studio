@@ -14,14 +14,11 @@ const webServices = [
 ];
 
 const automationServices = [
-  { service: "Single Automation Workflow", price: "From ₹3,000" },
-  { service: "Email Automation Setup", price: "From ₹4,000" },
+  { service: "Automation Workflows", price: "From ₹3,000" },
 ];
 
 const scrapingServices = [
-  { service: "Data Scraping (per city)", price: "From ₹1,500" },
-  { service: "Google My Business (10 cities)", price: "From ₹8,000" },
-  { service: "Website Scrape (10 websites)", price: "From ₹5,000" },
+  { service: "Data Scraping", price: "From ₹1,500" },
 ];
 
 const videoServices = [
@@ -44,7 +41,7 @@ const commercialServices = [
 const designServices = [
   { service: "Poster Design", price: "From ₹500" },
   { service: "Social Media Templates", price: "From ₹500" },
-  { service: "Logo Design", price: "From ₹2000" },
+  { service: "Logo Design", price: "From ₹200" },
   { service: "Business Card (Design Only)", price: "From ₹200" },
   { service: "YouTube Thumbnail", price: "From ₹300" },
   { service: "Brochure", price: "From ₹300" },

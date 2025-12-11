@@ -28,8 +28,7 @@ export const serviceCategories: Category[] = [
         label: "Automation",
         description: "Streamline your workflows",
         services: [
-            { id: "workflow", label: "Automation Workflow" },
-            { id: "email-automation", label: "Email Automation" },
+            { id: "workflow", label: "Automation Workflows" },
         ]
     },
     {
@@ -38,8 +37,6 @@ export const serviceCategories: Category[] = [
         description: "Extract data from the web",
         services: [
             { id: "scraping", label: "Data Scraping" },
-            { id: "gmb-scraping", label: "GMB Scraping (10 cities)" },
-            { id: "website-scraping", label: "Website Scrape (10 sites)" },
         ]
     },
     {
