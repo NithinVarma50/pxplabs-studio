@@ -64,10 +64,6 @@ const Contact = () => {
       return;
     }
 
-<<<<<<< HEAD
-    const servicesText = selectedServices.map((s) => s.label).join(", ");
-    // No price text calculation
-=======
     // Group selected services by category
     const servicesByCategory = serviceCategories
       .map((cat) => {
@@ -75,19 +71,14 @@ const Contact = () => {
         return { category: cat.label, services: catServices };
       })
       .filter((group) => group.services.length > 0);
->>>>>>> 01e4db7442e0045e83c65a3ff02a6cc786d82880
 
     // Build formatted services text
     const servicesText = servicesByCategory
       .map((group) => {
-        const serviceList = group.services.map((s) => `  • ${s.label} — ₹${s.basePrice.toLocaleString()}`).join("\n");
+        const serviceList = group.services.map((s) => `  • ${s.label}`).join("\n");
         return `*${group.category}*\n${serviceList}`;
       })
       .join("\n\n");
-
-    const discountText = pricing.discountPercent > 0 
-      ? `\nDiscount (${(pricing.discountPercent * 100).toFixed(0)}%): -₹${pricing.discountAmount.toLocaleString()}`
-      : "";
 
     const message = `━━━━━━━━━━━━━━━━━━━━
 *🚀 NEW PROJECT INQUIRY*
@@ -96,25 +87,14 @@ const Contact = () => {
 *📋 Client Details*
 Name: ${formData.name}
 Contact: ${formData.contact}
-<<<<<<< HEAD
-Services: ${servicesText}
-Details: ${formData.details}`;
-=======
 
 *📦 Services Selected*
 ${servicesText}
 
-━━━━━━━━━━━━━━━━━━━━
-*💰 Pricing Summary*
-Subtotal: ₹${pricing.totalBase.toLocaleString()}${discountText}
-*Total: ₹${pricing.finalPrice.toLocaleString()}*
-━━━━━━━━━━━━━━━━━━━━
-
 *📝 Project Details*
-${formData.details || "Not provided"}
+${formData.details}
 
 ━━━━━━━━━━━━━━━━━━━━`;
->>>>>>> 01e4db7442e0045e83c65a3ff02a6cc786d82880
 
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://api.whatsapp.com/send?phone=919381904726&text=${encodedMessage}`, "_blank");
