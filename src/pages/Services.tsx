@@ -111,7 +111,7 @@ const Services = () => {
               Transparent pricing
             </h1>
             <p className="text-lg text-muted-foreground">
-              All prices are starting points — final cost depends on project scope and complexity.
+              All prices listed are starting points. Final quotes are customized based on project complexity (backend, API integrations, etc.).
             </p>
           </motion.div>
         </div>
