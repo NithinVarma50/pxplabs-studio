@@ -218,7 +218,6 @@ ${formData.details}
                             />
                             <div className="flex-1">
                               <span className="text-sm font-medium block">{service.label}</span>
-                              <span className="text-sm font-medium block">{service.label}</span>
                               <span className="text-xs text-muted-foreground">Custom Quote</span>
                             </div>
                           </label>

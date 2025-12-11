@@ -5,49 +5,49 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const webServices = [
-  { service: "Single Page Portfolio", price: "₹4,000 – ₹12,000" },
-  { service: "Multi-Page Portfolio", price: "₹5,000 – ₹20,000" },
-  { service: "Frontend Website", price: "₹6,000+" },
-  { service: "Fullstack Website", price: "₹12,000+" },
-  { service: "New Page Addition", price: "₹1,500+" },
-  { service: "UI / Content Changes", price: "₹500 – ₹1,500" },
+  { service: "Single Page Portfolio", price: "From ₹4,000" },
+  { service: "Multi-Page Portfolio", price: "From ₹5,000" },
+  { service: "Frontend Website", price: "From ₹6,000" },
+  { service: "Fullstack Website", price: "From ₹12,000" },
+  { service: "New Page Addition", price: "From ₹1,500" },
+  { service: "UI / Content Changes", price: "From ₹500" },
 ];
 
 const automationServices = [
-  { service: "Single Automation Workflow", price: "₹3,000+" },
-  { service: "Email Automation Setup", price: "₹4,000+" },
+  { service: "Single Automation Workflow", price: "From ₹3,000" },
+  { service: "Email Automation Setup", price: "From ₹4,000" },
 ];
 
 const scrapingServices = [
-  { service: "Data Scraping (per city)", price: "₹1,500 – ₹5,000" },
-  { service: "Google My Business (10 cities)", price: "₹8,000" },
-  { service: "Website Scrape (10 websites)", price: "₹5,000" },
+  { service: "Data Scraping (per city)", price: "From ₹1,500" },
+  { service: "Google My Business (10 cities)", price: "From ₹8,000" },
+  { service: "Website Scrape (10 websites)", price: "From ₹5,000" },
 ];
 
 const videoServices = [
-  { service: "Short Reels (15–30 sec)", price: "₹800 – ₹2,000" },
-  { service: "Long-Form Video", price: "₹3,000" },
-  { service: "Podcast / Interview", price: "₹4,500+" },
-  { service: "Promo Video", price: "₹3,000 – ₹6,000" },
-  { service: "Portfolio Intro", price: "₹3,500+" },
-  { service: "Montage", price: "₹1,500+" },
-  { service: "Content Creation", price: "₹2,000+" },
+  { service: "Short Reels (15–30 sec)", price: "From ₹800" },
+  { service: "Long-Form Video", price: "From ₹3,000" },
+  { service: "Podcast / Interview", price: "From ₹4,500" },
+  { service: "Promo Video", price: "From ₹3,000" },
+  { service: "Portfolio Intro", price: "From ₹3,500" },
+  { service: "Montage", price: "From ₹1,500" },
+  { service: "Content Creation", price: "From ₹2,000" },
 ];
 
 const commercialServices = [
-  { service: "Advertisements (Shoot + Edit)", price: "₹15,000+" },
-  { service: "Trailer Cuts", price: "₹4,000+" },
-  { service: "Documentary", price: "₹2,000+" },
-  { service: "Advanced After Effects", price: "₹3,000+" },
+  { service: "Advertisements (Shoot + Edit)", price: "From ₹15,000" },
+  { service: "Trailer Cuts", price: "From ₹4,000" },
+  { service: "Documentary", price: "From ₹2,000" },
+  { service: "Advanced After Effects", price: "From ₹3,000" },
 ];
 
 const designServices = [
-  { service: "Poster Design", price: "₹500 – ₹1,200" },
-  { service: "Social Media Templates", price: "₹500+" },
-  { service: "Logo Design", price: "₹200 – ₹1,000" },
-  { service: "Business Card (Design Only)", price: "₹200 – ₹500" },
-  { service: "YouTube Thumbnail", price: "₹300+" },
-  { service: "Brochure", price: "₹300+" },
+  { service: "Poster Design", price: "From ₹500" },
+  { service: "Social Media Templates", price: "From ₹500" },
+  { service: "Logo Design", price: "From ₹2000" },
+  { service: "Business Card (Design Only)", price: "From ₹200" },
+  { service: "YouTube Thumbnail", price: "From ₹300" },
+  { service: "Brochure", price: "From ₹300" },
 ];
 
 interface ServiceSectionProps {
