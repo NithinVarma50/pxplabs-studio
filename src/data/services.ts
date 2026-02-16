@@ -56,6 +56,18 @@ export const serviceCategories: Category[] = [
         ]
     },
     {
+        id: "ai-video",
+        label: "AI Video Production",
+        description: "AI-powered video creation and editing",
+        services: [
+            { id: "ai-marketing-video", label: "AI Marketing Video" },
+            { id: "ai-face-swap", label: "AI Face Swap Video" },
+            { id: "ai-video-edit", label: "AI Video Editing" },
+            { id: "ai-voiceover", label: "AI Voiceover (ElevenLabs)" },
+            { id: "ai-product-video", label: "AI Product Showcase" },
+        ]
+    },
+    {
         id: "commercial",
         label: "Commercial",
         description: "High-end commercial production",
