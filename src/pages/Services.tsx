@@ -31,6 +31,14 @@ const videoServices = [
   { service: "Content Creation", price: "From ₹2,000" },
 ];
 
+const aiVideoServices = [
+  { service: "AI Marketing Video", price: "From ₹2,500" },
+  { service: "AI Face Swap Video", price: "From ₹1,500" },
+  { service: "AI Video Editing", price: "From ₹2,000" },
+  { service: "AI Voiceover (ElevenLabs)", price: "From ₹1,000" },
+  { service: "AI Product Showcase", price: "From ₹3,000" },
+];
+
 const commercialServices = [
   { service: "Advertisements (Shoot + Edit)", price: "From ₹15,000" },
   { service: "Trailer Cuts", price: "From ₹4,000" },
@@ -140,20 +148,25 @@ const Services = () => {
           id="video"
           number="04"
           title="Video Editing"
-
           services={videoServices}
         />
         <ServiceSection
-          id="commercial"
+          id="ai-video"
           number="05"
+          title="AI Video Production"
+          subtitle="Powered by RunwayML, Kling, Highfield, Veo & ElevenLabs"
+          services={aiVideoServices}
+        />
+        <ServiceSection
+          id="commercial"
+          number="06"
           title="Commercial & Documentary"
           services={commercialServices}
         />
         <ServiceSection
           id="design"
-          number="06"
+          number="07"
           title="Graphic Design"
-
           services={designServices}
         />
       </div>

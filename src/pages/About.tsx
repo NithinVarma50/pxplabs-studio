@@ -139,9 +139,9 @@ const About = () => {
                 <img src="/saiteja.jpg" alt="Saiteja" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-heading text-xl font-medium mb-2">Saiteja</h3>
-              <p className="text-sm text-muted-foreground mb-6">Mobile Editor & Short Form Editor</p>
+              <p className="text-sm text-muted-foreground mb-6">AI Video Editor & Short Form Specialist</p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Specializes in personal branding content, B-rolls, and engaging short-form edits for Instagram.
+                Specializes in AI-powered video creation using tools like RunwayML, Kling, Highfield, and Veo. Creates AI marketing videos, face-swap edits, and voiceovers with ElevenLabs. Also handles personal branding content, B-rolls, and short-form edits for Instagram.
               </p>
             </motion.div>
 

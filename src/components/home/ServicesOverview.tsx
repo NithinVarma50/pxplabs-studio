@@ -29,12 +29,18 @@ const services = [
   },
   {
     number: "05",
+    title: "AI Video Production",
+    description: "AI-powered marketing videos, face swaps, and voiceovers using RunwayML, Kling & more.",
+    link: "/services#ai-video",
+  },
+  {
+    number: "06",
     title: "Commercial & Documentary",
     description: "Ads, trailer cuts, and documentaries with advanced visual effects.",
     link: "/services#commercial",
   },
   {
-    number: "06",
+    number: "07",
     title: "Graphic Design",
     description: "Modern posters, thumbnails, logos, and brand assets.",
     link: "/services#design",
