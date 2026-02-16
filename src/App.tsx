@@ -12,6 +12,7 @@ import Work from "./pages/Work";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import { Analytics } from "@vercel/analytics/react";
+import { PopupAd } from "@/components/ui/PopupAd";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Analytics />
+        <PopupAd />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
