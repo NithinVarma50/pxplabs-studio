@@ -62,8 +62,8 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.name.trim() || !formData.phone.trim() || !formData.email.trim() || selectedServiceIds.length === 0 || !formData.details.trim()) {
-      toast({ title: "Please fill all fields & project details", variant: "destructive" });
+    if (!formData.name.trim() || !formData.phone.trim() || !formData.email.trim() || selectedServiceIds.length === 0) {
+      toast({ title: "Please fill all required fields & select services", variant: "destructive" });
       return;
     }
 
