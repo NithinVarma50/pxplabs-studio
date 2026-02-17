@@ -272,7 +272,7 @@ ${formData.details}
 
               {/* Additional Details */}
               <div>
-                <label className="block text-sm font-medium mb-3">Project Details *</label>
+                <label className="block text-sm font-medium mb-3">Project Details <span className="text-muted-foreground font-normal">(optional)</span></label>
                 <Textarea
                   placeholder="Any specific requirements?"
                   value={formData.details}
