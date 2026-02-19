@@ -1,4 +1,7 @@
-import Spline from '@splinetool/react-spline';
+import { Suspense, lazy } from 'react';
+import { ErrorBoundary } from './ErrorBoundary';
+
+const Spline = lazy(() => import('@splinetool/react-spline'));
 
 interface SplineButtonProps {
     className?: string;
@@ -11,7 +14,11 @@ export function SplineButton({
 }: SplineButtonProps) {
     return (
         <div className={className}>
-            <Spline scene={scene} />
+            <ErrorBoundary>
+                <Suspense fallback={<div className="w-full h-full bg-muted/20 animate-pulse rounded-full" />}>
+                    <Spline scene={scene} />
+                </Suspense>
+            </ErrorBoundary>
         </div>
     );
 }
