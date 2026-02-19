@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+
 import { StackedImageHover } from "@/components/ui/hover-deck-fx";
 import { ScrollingHeroMarquee } from "@/components/ui/scrolling-hero-marquee";
+import { SplineButton } from "@/components/ui/SplineButton";
 import AnimatedTextCycle from "@/components/ui/animated-text-cycle";
 
 const slogans = [
@@ -122,10 +122,7 @@ const Hero = () => {
               className="flex flex-wrap items-center gap-4"
             >
               <Link to="/contact">
-                <Button variant="hero" size="lg">
-                  Start a Project
-                  <ArrowRight className="w-4 h-4" />
-                </Button>
+                <SplineButton className="w-[180px] h-[60px] cursor-pointer" />
               </Link>
 
             </motion.div>
