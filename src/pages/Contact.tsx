@@ -62,8 +62,8 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.name.trim() || !formData.phone.trim() || !formData.email.trim() || selectedServiceIds.length === 0 || !formData.details.trim()) {
-      toast({ title: "Please fill all fields & project details", variant: "destructive" });
+    if (!formData.name.trim() || !formData.phone.trim() || !formData.email.trim() || selectedServiceIds.length === 0) {
+      toast({ title: "Please fill all required fields & select services", variant: "destructive" });
       return;
     }
 
@@ -272,7 +272,7 @@ ${formData.details}
 
               {/* Additional Details */}
               <div>
-                <label className="block text-sm font-medium mb-3">Project Details *</label>
+                <label className="block text-sm font-medium mb-3">Project Details <span className="text-muted-foreground font-normal">(optional)</span></label>
                 <Textarea
                   placeholder="Any specific requirements?"
                   value={formData.details}
