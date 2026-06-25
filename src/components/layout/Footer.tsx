@@ -33,7 +33,7 @@ const Footer = () => {
           <div>
             <h4 className="font-medium text-sm mb-4">Navigate</h4>
             <ul className="space-y-3">
-              {["Home", "About", "Services", "Social"].map((link) => (
+              {["Home", "About", "Studio", "Social"].map((link) => (
                 <li key={link}>
                   <Link
                     to={link === "Home" ? "/" : `/${link.toLowerCase()}`}
@@ -46,17 +46,17 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Studio */}
           <div>
-            <h4 className="font-medium text-sm mb-4">Services</h4>
+            <h4 className="font-medium text-sm mb-4">Studio</h4>
             <ul className="space-y-3">
-              {["Websites", "AI Automation", "AI Marketing", "Software", "Data & Leads"].map((service) => (
-                <li key={service}>
+              {["AI Models", "Software", "Open Source"].map((item) => (
+                <li key={item}>
                   <Link
-                    to="/services"
+                    to="/studio"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {service}
+                    {item}
                   </Link>
                 </li>
               ))}

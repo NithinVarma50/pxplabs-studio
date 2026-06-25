@@ -88,9 +88,9 @@ const Hero = () => {
                   <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
-              <Link to="/services">
+              <Link to="/studio">
                 <Button variant="ghost" size="lg">
-                  Explore Services
+                  Explore Studio
                 </Button>
               </Link>
             </motion.div>
