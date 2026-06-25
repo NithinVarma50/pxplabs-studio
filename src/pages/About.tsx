@@ -44,15 +44,20 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="max-w-3xl"
           >
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-black flex items-center justify-center">
+            <a
+              href="https://www.ignitioninaiera.space/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 mb-8 group w-fit block"
+            >
+              <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-black flex items-center justify-center transition-transform group-hover:scale-105">
                 <img src="/ignition-logo.jpg" alt="Ignition in AI Era" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Powered by</p>
-                <h2 className="font-heading text-2xl font-semibold">Ignition in AI Era</h2>
+                <h2 className="font-heading text-2xl font-semibold group-hover:underline">Ignition in AI Era</h2>
               </div>
-            </div>
+            </a>
 
             <div className="space-y-5 text-base text-muted-foreground leading-relaxed">
               <p>PXP Lab is proudly powered by Ignition in AI Era.</p>

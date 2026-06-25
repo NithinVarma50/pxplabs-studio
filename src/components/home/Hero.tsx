@@ -26,7 +26,9 @@ const Hero = () => {
           <div className="max-w-2xl text-left">
             {/* Ignition Badge */}
             <motion.a
-              href="#"
+              href="https://www.ignitioninaiera.space/"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}

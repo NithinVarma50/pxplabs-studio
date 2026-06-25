@@ -112,22 +112,25 @@ const Studio = () => {
             </motion.div>
 
             {/* Powered by Ignition */}
-            <motion.div
+            <motion.a
+              href="https://www.ignitioninaiera.space/"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex items-start gap-6 pt-12 border-t border-border/40"
+              className="flex items-start gap-6 pt-12 border-t border-border/40 group cursor-pointer block"
             >
-              <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-black flex items-center justify-center">
+              <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-black flex items-center justify-center transition-transform group-hover:scale-105">
                 <img src="/ignition-logo.jpg" alt="Ignition in AI Era" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Powered by Ignition in AI Era</p>
-                <p className="font-medium mb-2">PXP Lab is the product and software studio of the Ignition in AI Era ecosystem.</p>
+                <p className="font-medium mb-2 group-hover:underline">PXP Lab is the product and software studio of the Ignition in AI Era ecosystem.</p>
                 <p className="text-muted-foreground">The community explores ideas.<br/>PXP Lab turns those ideas into products.</p>
               </div>
-            </motion.div>
+            </motion.a>
           </div>
         </div>
       </section>

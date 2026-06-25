@@ -26,14 +26,17 @@ const Ecosystem = () => {
 
           <div className="space-y-8">
             {/* Ignition */}
-            <motion.div
+            <motion.a
+              href="https://www.ignitioninaiera.space/"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="p-8 sm:p-10 rounded-3xl border border-border/40 bg-card/30"
+              className="p-8 sm:p-10 rounded-3xl border border-border/40 bg-card/30 hover:bg-card/40 transition-colors block group cursor-pointer"
             >
-              <h2 className="font-heading text-2xl font-semibold mb-4 flex items-center gap-3">
+              <h2 className="font-heading text-2xl font-semibold mb-4 flex items-center gap-3 group-hover:underline">
                 <span className="text-3xl">🚀</span> Ignition in AI Era
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -44,7 +47,7 @@ const Ecosystem = () => {
                   Through webinars, workshops, hackathons, founder talks, and community events, Ignition brings ambitious people together to learn, collaborate, and build.
                 </p>
               </div>
-            </motion.div>
+            </motion.a>
 
             {/* IgnitePedia */}
             <motion.div

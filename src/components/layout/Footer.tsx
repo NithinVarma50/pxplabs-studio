@@ -19,7 +19,9 @@ const Footer = () => {
               AI Studio for Modern Businesses
             </p>
             <a
-              href="#"
+              href="https://www.ignitioninaiera.space/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-border/60 bg-card/40 hover:bg-card/70 transition-colors group"
             >
               <img src="/ignition-logo.jpg" alt="Ignition" className="w-4 h-4 rounded-full object-cover" />
@@ -87,7 +89,9 @@ const Footer = () => {
             <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">For Builders</p>
             <p className="text-sm text-muted-foreground mb-3">Need to learn AI and connect with builders?</p>
             <a
-              href="#"
+              href="https://www.ignitioninaiera.space/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm text-foreground font-medium hover:underline"
             >
               Visit Ignition in AI Era <ArrowUpRight className="w-4 h-4" />
