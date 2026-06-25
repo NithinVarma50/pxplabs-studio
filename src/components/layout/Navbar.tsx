@@ -26,7 +26,7 @@ const Navbar = () => {
               <img src="/pxplabs-logo-black.png" alt="PXPLabs Logo" className="w-full h-full object-cover" />
             </div>
             <span className="font-heading font-medium text-sm hidden sm:block">
-              PXPLabs
+              PXP Lab
             </span>
           </Link>
 

@@ -127,35 +127,39 @@ const Services = () => {
         <ServiceSection
           id="web"
           number="01"
-          title="Web Development"
+          title="Website Design & Development"
+          subtitle="Landing pages, portfolios, SaaS, dashboards, custom web apps"
           services={webServices}
         />
         <ServiceSection
           id="automation"
           number="02"
-          title="Automation & Workflows"
+          title="AI Automation"
+          subtitle="Workflows, integrations, internal tools, business systems"
           services={automationServices}
-          note="Tools: n8n, Make.com, OpenAI, Notion, Google Sheets, APIs"
+          note="Tools: n8n, Make.com, OpenAI, Lovable Cloud, Notion, Google Sheets, APIs"
         />
         <ServiceSection
           id="scraping"
           number="03"
-          title="Data Scraping"
+          title="Data & Lead Intelligence"
+          subtitle="Lead research, scraping, CSV enrichment, automation-ready datasets"
           services={scrapingServices}
           note="Includes: Business name, email, phone, location, website, social links, ratings. Export: CSV/Excel"
         />
         <ServiceSection
-          id="video"
+          id="ai-video"
           number="04"
-          title="Video Editing"
-          services={videoServices}
+          title="AI Marketing Content"
+          subtitle="Powered by RunwayML, Kling, Veo & ElevenLabs"
+          services={aiVideoServices}
         />
         <ServiceSection
-          id="ai-video"
+          id="video"
           number="05"
-          title="AI Video Production"
-          subtitle="Powered by RunwayML, Kling, Highfield, Veo & ElevenLabs"
-          services={aiVideoServices}
+          title="Video Editing"
+          subtitle="For creators, founders, YouTube channels, podcasts, brands"
+          services={videoServices}
         />
         <ServiceSection
           id="commercial"
@@ -164,8 +168,31 @@ const Services = () => {
           services={commercialServices}
         />
         <ServiceSection
-          id="design"
+          id="software"
           number="07"
+          title="Custom Software"
+          subtitle="Internal tools, desktop apps, AI utilities, dashboards, automation"
+          services={[
+            { service: "Internal Business Tool", price: "From ₹8,000" },
+            { service: "Desktop / Cross-platform App", price: "From ₹15,000" },
+            { service: "AI Utility / Mini SaaS", price: "From ₹10,000" },
+            { service: "Custom Dashboard", price: "From ₹6,000" },
+          ]}
+        />
+        <ServiceSection
+          id="oss"
+          number="08"
+          title="Open Source & Free AI Tools"
+          subtitle="Production-ready templates and free AI tools for builders"
+          services={[
+            { service: "Open-Source Templates", price: "Free" },
+            { service: "Free AI Tools", price: "Free" },
+            { service: "Custom OSS Sponsorship", price: "On request" },
+          ]}
+        />
+        <ServiceSection
+          id="design"
+          number="09"
           title="Graphic Design"
           services={designServices}
         />
