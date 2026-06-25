@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { StackedImageHover } from "@/components/ui/hover-deck-fx";
 
 const services = [
   "Websites",
@@ -78,7 +79,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.45 }}
-            className="flex flex-wrap items-center justify-center gap-4"
+            className="flex flex-wrap items-center justify-center gap-4 mb-16"
           >
             <Link to="/contact">
               <Button variant="hero" size="lg">
@@ -91,6 +92,24 @@ const Hero = () => {
                 Explore Services
               </Button>
             </Link>
+          </motion.div>
+
+          {/* Hero Image Stack (money) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.55 }}
+            className="relative w-full flex justify-center"
+          >
+            <StackedImageHover
+              className="!w-[280px] !h-[115px] sm:!w-[400px] sm:!h-[180px] lg:!w-[500px] lg:!h-[220px]"
+              images={[
+                "https://upload.wikimedia.org/wikipedia/commons/7/7b/Obverse_of_the_series_2009_%24100_Federal_Reserve_Note.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/7/7b/Obverse_of_the_series_2009_%24100_Federal_Reserve_Note.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/7/7b/Obverse_of_the_series_2009_%24100_Federal_Reserve_Note.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/7/7b/Obverse_of_the_series_2009_%24100_Federal_Reserve_Note.jpg",
+              ]}
+            />
           </motion.div>
         </div>
       </div>
