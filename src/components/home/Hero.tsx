@@ -82,10 +82,9 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.45 }}
               className="flex flex-wrap items-center gap-4"
             >
-              <Link to="/contact">
+              <Link to="/ecosystem">
                 <Button variant="hero" size="lg">
-                  Start a Project
-                  <ArrowRight className="w-4 h-4" />
+                  Explore Ecosystem
                 </Button>
               </Link>
               <Link to="/studio">

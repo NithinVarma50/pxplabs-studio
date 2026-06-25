@@ -33,7 +33,7 @@ const Footer = () => {
           <div>
             <h4 className="font-medium text-sm mb-4">Navigate</h4>
             <ul className="space-y-3">
-              {["Home", "About", "Studio", "Social"].map((link) => (
+              {["Home", "About", "Studio", "Ecosystem"].map((link) => (
                 <li key={link}>
                   <Link
                     to={link === "Home" ? "/" : `/${link.toLowerCase()}`}
@@ -77,14 +77,6 @@ const Footer = () => {
                   WhatsApp
                 </a>
               </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Start a Project
-                </Link>
-              </li>
             </ul>
           </div>
         </div>
@@ -105,7 +97,7 @@ const Footer = () => {
             <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">For Businesses</p>
             <p className="text-sm text-muted-foreground mb-3">Need AI solutions for your business?</p>
             <Link
-              to="/contact"
+              to="/studio"
               className="inline-flex items-center gap-1.5 text-sm text-foreground font-medium hover:underline"
             >
               You're already in the right place <ArrowUpRight className="w-4 h-4" />

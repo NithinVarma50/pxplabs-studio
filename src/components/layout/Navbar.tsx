@@ -8,8 +8,7 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Studio", path: "/studio" },
-  { name: "Social", path: "/social" },
-  { name: "Contact", path: "/contact" },
+  { name: "Ecosystem", path: "/ecosystem" },
 ];
 
 const Navbar = () => {
@@ -46,14 +45,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Link to="/contact">
-              <Button variant="hero" size="sm">
-                Get a Quote
-              </Button>
-            </Link>
-          </div>
+          {/* CTA Button removed */}
 
           {/* Mobile Menu Button */}
           <button
@@ -88,13 +80,7 @@ const Navbar = () => {
                     {link.name}
                   </Link>
                 ))}
-                <div className="pt-4 px-4">
-                  <Link to="/contact" onClick={() => setIsOpen(false)}>
-                    <Button variant="hero" className="w-full">
-                      Get a Quote
-                    </Button>
-                  </Link>
-                </div>
+                {/* CTA Button removed */}
               </div>
             </motion.div>
           )}

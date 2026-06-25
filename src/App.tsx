@@ -6,8 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Studio from "./pages/Studio";
-import Social from "./pages/Social";
-import Contact from "./pages/Contact";
+import Ecosystem from "./pages/Ecosystem";
 import NotFound from "./pages/NotFound";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -23,8 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/studio" element={<Studio />} />
-          <Route path="/social" element={<Social />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/ecosystem" element={<Ecosystem />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Analytics />
