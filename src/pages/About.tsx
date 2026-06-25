@@ -1,7 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Linkedin, Globe, ArrowUpRight } from "lucide-react";
-import ignitionLogo from "@/assets/ignition-logo.jpg.asset.json";
+
 
 const About = () => {
   return (
@@ -43,7 +43,7 @@ const About = () => {
             className="group flex flex-col sm:flex-row items-start sm:items-center gap-6 p-6 rounded-2xl border border-border/40 bg-card/30 hover:bg-card/50 transition-colors max-w-3xl"
           >
             <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-black flex items-center justify-center">
-              <img src={ignitionLogo.url} alt="Ignition in AI Era" className="w-full h-full object-cover" />
+              <img src="/ignition-logo.jpg" alt="Ignition in AI Era" className="w-full h-full object-cover" />
             </div>
             <div className="flex-1">
               <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Powered by</p>

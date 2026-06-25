@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import ignitionLogo from "@/assets/ignition-logo.jpg.asset.json";
+
 
 const Footer = () => {
   return (
@@ -22,7 +22,7 @@ const Footer = () => {
               href="#"
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-border/60 bg-card/40 hover:bg-card/70 transition-colors group"
             >
-              <img src={ignitionLogo.url} alt="Ignition" className="w-4 h-4 rounded-full object-cover" />
+              <img src="/ignition-logo.jpg" alt="Ignition" className="w-4 h-4 rounded-full object-cover" />
               <span className="text-xs text-muted-foreground">
                 Powered by <span className="text-foreground">Ignition in AI Era</span>
               </span>
